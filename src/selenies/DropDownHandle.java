@@ -20,22 +20,18 @@ public class DropDownHandle {
 		driver.navigate().to("https://demo.guru99.com/test/newtours/register.php");
 		
 //		WebElement selCountry=driver.findElement(By.xpath("//select[@name='country']"));
-//		
-//		Select sel=new Select(selCountry);
-		
-//		sel.selectByVisibleText("INDIA");
-//		sel.selectByVisibleText("ZIMBABWE");
-//		sel.selectByIndex(10);
-//		sel.selectByValue("SWITZERLAND");
+
 		
 		
-		List<WebElement> countryList=driver.findElements(By.xpath("//select[@name='country']/option"));
+		List<WebElement>   countryList=driver.findElements(By.xpath("//select[@name='country']/option"));
 		
 		System.out.println("total countriess present in dropdown are:"+countryList.size());
 		
 		List<WebElement> linkCount=driver.findElements(By.xpath("//a"));
 		
 		int regiStrationPageLinkCOunt=linkCount.size();
+		
+		System.out.println("jobito india");
 		
 		System.out.println("Links count:" +linkCount.size());
 		
